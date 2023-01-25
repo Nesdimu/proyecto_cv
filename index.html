@@ -15,7 +15,7 @@
 
     <!--Bootstrap 5.3-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  
+
     <link rel="stylesheet" href="css/estilos.css">
 
 </head>
@@ -41,25 +41,26 @@
             </span>
         </div>
     </div>
-    <div class="container" style="background-color: #dce7fa;">
+    <div class="container">
         <div class="row text-center">
             <div class="col-sm-4">
-                <h4>Algunas imágenes</h4>
+                <h4 id="curriculum" class="puntero">Curriculum Vitae</h4>
+                <p>Info en detalle</p>
+            </div>
+            <div class="col-sm-4">
+                <h4 id="slidefotos" class="puntero">Imágenes</h4>
                 <p>Conciertos / Sociales / Books / Producto</p>
             </div>
             <div class="col-sm-4">
-                <h4>Videos</h4>
+                <h4 id="slidevideos" class="puntero">Videos</h4>
                 <p>Demos</p>
-            </div>
-            <div class="col-sm-4">
-                <h4>Curriculum Vitae</h4>
-                <p>Info en detalle</p>
             </div>
 
         </div>
     </div>
 
-    <div id="carouselfotos" class="carousel slide" data-bs-ride="carousel">
+
+    <div id="carouselfotos" class="carousel slide" data-bs-ride="carousel" style="display: none;">
         <div class="carousel-inner">
             <div class="carousel-item active c-item" data-bs-interval="2500">
                 <img src="images/carousel-1.jpg" class="d-block w-100 c-img">
@@ -136,40 +137,50 @@
 
     </div>
 
-    <div id="carouselvideos" class="carousel slide" data-bs-ride="carousel">
+    <!-- <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul> -->
+
+
+    <div id="carouselvideos" class="carousel" data-bs-interval="false" style="display: none;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item c-item2 active">
-                <iframe class="first-slide d-block w-100 c-vid" src="https://www.youtube.com/embed/K5FynQ_YkKA" title="YouTube video player"
-                    frameborder="0"
+                <iframe class="first-slide d-block w-100 c-vid" src="https://www.youtube.com/embed/K5FynQ_YkKA"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                 </iframe>
             </div>
             <div class="carousel-item c-item2">
-                <iframe class="d-block w-100 c-vid" src="https://www.youtube.com/embed/nnGkMb2s9vQ" title="YouTube video player"
-                    frameborder="0"
+                <iframe class="d-block w-100 c-vid" src="https://www.youtube.com/embed/nnGkMb2s9vQ"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                 </iframe>
             </div>
             <div class=" carousel-item c-item2">
-                <iframe class="d-block w-100 c-vid" src="https://www.youtube.com/embed/AwzgN04uans" title="YouTube video player"
-                    frameborder="0"
+                <iframe class="d-block w-100 c-vid" src="https://www.youtube.com/embed/AwzgN04uans"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                 </iframe>
-                
+
             </div>
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselvideos" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselvideos" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
 
     </div>
-    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+
+
+
+
 </body>
 
 </html>

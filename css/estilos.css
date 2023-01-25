@@ -3,6 +3,11 @@
     background-color: #7dadff;
     width: 100%;
     padding: 1%;
+    border-radius: 0;
+}
+
+.puntero{
+    cursor: pointer;
 }
 
 /* ATRIBUTOS POR ETIQUETA O ID*/
@@ -20,7 +25,10 @@ h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(159, 29, 192);
     padding-top: 1%;
+}
 
+body {
+    background: url("../images/noise.jpg");
 }
 
 
@@ -30,21 +38,26 @@ h4 {
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
+    margin: auto;
+    max-width: 70rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     bottom: 3rem;
     z-index: 10;
+
 }
 
 /* Declare heights because of positioning of img element */
-.c-item2 {
-    height: 32rem;
-}
-
 .c-item {
     height: auto;
+
+}
+
+.c-item2>iframe {
+    min-width: 100%;
+    height: 32rem;
 }
 
 .c-img {
