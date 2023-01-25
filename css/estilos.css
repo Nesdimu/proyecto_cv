@@ -1,15 +1,18 @@
+/*DEFINICIÓN DE CLASE EN ESTILO*/
+.c-item {
+    height: 640px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
-    color: #ffa5a5;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*
-comentarios van así
-*/
+p {}
 
 h4 {
     border: 1PX solid cornflowerblue;
@@ -22,32 +25,9 @@ h4 {
     color: rgb(159, 29, 192);
 }
 
-/*
-otro elemento de muestra para hacer box in box
-*/
-section {
-    border: 3px solid blue;
-    padding: 5px 20px 40px 10px;
-    color: rgb(231, 205, 255);
-    width: 400px;
-    margin-left: 60px;
-    text-align: justify;
-    text-justify: inter-word;
-    line-break: auto;
-}
 
 /* ATRIBUTOS POR ETIQUETA O ID*/
 #demo {
-     color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-#carouselfotos {
-    height: auto ;
-}
-
-
-/*DEFINICIÓN DE CLASE EN ESTILO*/
-.algo {
-    
-}
-
 
