@@ -40,13 +40,14 @@ section {
 #demo {
      color: rgb(255, 255, 255);
 }
+#carouselfotos {
+    height: auto ;
+}
 
 
 /*DEFINICIÓN DE CLASE EN ESTILO*/
-
-.estaesmiclase {
-    font-weight: bolder;
-    color: darkgray;
+.algo {
+    
 }
 
 
