@@ -1,11 +1,11 @@
 /*DEFINICIÓN DE CLASE EN ESTILO*/
 .c-item {
-    height: 640px;
+    height: auto;
 }
 
 .c-img {
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 * {
