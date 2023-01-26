@@ -15,3 +15,9 @@ document.getElementById("curriculum").addEventListener('click', function () {
     document.getElementById('carouselvideos').style.display='none';
     document.getElementById('cv').style.display='block';
 });
+
+// if(document.screen.width < 576){
+//     console.log("pantalla menor a 576px");
+//     document.getElementById('subcolumna').style.display='none';
+// }
+

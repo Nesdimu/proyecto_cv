@@ -64,3 +64,9 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    p.subcolumna {
+        display: none;
+    }
+}
