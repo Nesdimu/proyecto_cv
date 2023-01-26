@@ -1,3 +1,5 @@
+
+// oculta y muestra secciones
 document.getElementById("slidefotos").addEventListener('click', function () {
     document.getElementById('carouselfotos').style.display='block';
     document.getElementById('carouselvideos').style.display='none';
@@ -16,8 +18,17 @@ document.getElementById("curriculum").addEventListener('click', function () {
     document.getElementById('cv').style.display='block';
 });
 
-// if(document.screen.width < 576){
-//     console.log("pantalla menor a 576px");
-//     document.getElementById('subcolumna').style.display='none';
-// }
-
+// boton go-top
+window.onscroll = function(){
+    if (document.documentElement.scrollTop >80){
+        document.querySelector('.go-top-container').classList.add('show'); 
+    }else{
+        document.querySelector('.go-top-container').classList.remove('show'); 
+    }
+}
+document.querySelector('.go-top-container').addEventListener('click', () =>{
+    window.scrollTo({
+    top:0,
+    behavior:"smooth"
+    });
+});
