@@ -1,9 +1,10 @@
-/*capa de estilo - clases*/
+/* fondo ruido al body */
 body {
     background: url("../images/noise.jpg");
 }
 
-/* titulo principal superior*/
+/* estilos a clases */
+/* estilo de titulo principal superior */
 .card {
     background-color: #7dadff;
     width: 100%;
@@ -11,6 +12,7 @@ body {
     border-radius: 0;
 }
 
+/*fondo del selector de secciones */
 .selector {
     background-color: #aeccff;
 }
@@ -18,21 +20,33 @@ body {
 /*texto links a cv imagenes y videos*/
 h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(159, 29, 192);
+    color: #9f1dc0;
     padding-top: 10px;
+
 }
 
-.puntero {
+.seccion {
     cursor: pointer;
 }
 
-/* Carousel */
+h4:hover {
+    color: #c083cf;
+}
+
+
+/* estilo de hipervinculos*/
+a {
+    text-decoration: none;
+    color: #fcfcfcfb;
+}
+
+/* estilo de Carousel */
 .carousel {
     margin: auto;
     max-width: 70rem;
 }
 
-/* tamaños y alturas de imagenes y videos */
+/* estilos de imagenes y videos */
 .c-item {
     height: auto;
 }
@@ -53,9 +67,15 @@ h4 {
 
 /* footer */
 .piepagina {
-    color: rgba(217, 217, 217, 0.984);
-    background-color: rgba(100, 100, 100, 0.408);
+    color: #fcfcfcfb;
+    background-color: #64646468;
     padding: 2%;
+}
+
+/* separador de lineas*/
+.clear {
+    clear: both;
+    height: 15px;
 }
 
 /* ATRIBUTOS POR ETIQUETA O ID*/
@@ -88,7 +108,7 @@ h4 {
     }
 }
 
-/************ ir arriba ************/
+/************estilos del botón de ir arriba ************/
 .go-top-container {
     position: fixed;
     bottom: 40px;
@@ -153,21 +173,9 @@ h4 {
 }
 
 /*************************************************************/
+/* estilos CV */
 
-/* * { margin: 0; padding: 0; } */
-
-/* body {
-    font: 16px Helvetica, Sans-Serif;
-    line-height: 24px;
-    background: url(images/noise.jpg);
-} */
-
-.clear {
-    clear: both;
-    height: 15px;
-}
-
-#objectivo p {
+#objetivo p {
     font-family: Georgia, Serif;
     font-style: italic;
     color: #666;
@@ -176,7 +184,7 @@ h4 {
 
 #pic {
     float: right;
-    margin: -40px 0 0 0;
+    margin: -30px 0 0 0;
 }
 
 .fn {
@@ -192,27 +200,16 @@ ul {
     margin: 0 0 2px 17px;
 }
 
-
-
 dt {
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
     text-align: right;
-    padding: 0 20px 20px 0;
+    padding: 0 20px 11px 0;
     border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
-}
-
-dd {
-    width: 600px;
-    float: right;
-}
-
-dd.clear {
-    float: none;
-    margin: 0;
-    height: 15px;
+    border-bottom: 2px solid #999;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /*************************************************/
