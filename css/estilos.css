@@ -31,8 +31,14 @@ h4 {
 
 h4:hover {
     color: #c083cf;
+    font-weight: bold;
+ 
 }
 
+.seccion-activa {
+    color: #c083cf;
+    font-weight: bold;
+}
 
 /* estilo de hipervinculos*/
 a {

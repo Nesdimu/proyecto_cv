@@ -1,43 +1,26 @@
 
+
 // oculta y muestra secciones
-// document.getElementById("slidefotos").addEventListener('click', function () {
-//     document.getElementById('carouselfotos').style.display = 'block';
-//     document.getElementById('carouselvideos').style.display = 'none';
-//     document.getElementById('cv').style.display = 'none';
-//     document.getElementById('carouselfotos').scrollIntoView();
-// });
-
-// document.getElementById("slidevideos").addEventListener('click', function () {
-//     document.getElementById('carouselfotos').style.display = 'none';
-//     document.getElementById('carouselvideos').style.display = 'block';
-//     document.getElementById('cv').style.display = 'none';
-//     document.getElementById('carouselvideos').scrollIntoView();
-// });
-
-// document.getElementById("curriculum").addEventListener('click', function () {
-//     document.getElementById('carouselfotos').style.display = 'none';
-//     document.getElementById('carouselvideos').style.display = 'none';
-//     document.getElementById('cv').style.display = 'block';
-//     document.getElementById('cv').scrollIntoView();
-// });
-
 document.getElementById("slidefotos").addEventListener('click', function () {
-    show('carouselfotos', 'carouselvideos', 'cv');
+    show('carouselfotos', 'carouselvideos', 'cv', 'slidefotos', 'slidevideos', 'curriculum');
 });
 
 document.getElementById("slidevideos").addEventListener('click', function () {
-    show('carouselvideos', 'carouselfotos', 'cv');
+    show('carouselvideos', 'carouselfotos', 'cv', 'slidevideos', 'slidefotos', 'curriculum');
 });
 
 document.getElementById("curriculum").addEventListener('click', function () {
-    show('cv', 'carouselvideos','carouselfotos');
+    show('cv', 'carouselvideos', 'carouselfotos', 'curriculum', 'slidefotos', 'slidevideos');
 });
 
-function show(idToShow, idToHide1, idToHide2) {
+function show(idToShow, idToHide1, idToHide2, seccionSi, seccionNo1, seccionNo2) {
     document.getElementById(idToShow).style.display = 'block';
     document.getElementById(idToHide1).style.display = 'none';
     document.getElementById(idToHide2).style.display = 'none';
     document.getElementById(idToShow).scrollIntoView();
+    document.getElementById(seccionSi).classList.add('seccion-activa');
+    document.getElementById(seccionNo1).classList.remove('seccion-activa');
+    document.getElementById(seccionNo2).classList.remove('seccion-activa');
 }
 
 
