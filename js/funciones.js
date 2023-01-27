@@ -67,6 +67,7 @@ document.getElementById("slidevideos").addEventListener('click', function () {
 
 document.getElementById("curriculum").addEventListener('click', function () {
     show('cv', 'carouselvideos', 'carouselfotos', 'curriculum', 'slidefotos', 'slidevideos');
+    console.log("clic en cv");
 });
 
 function show(idToShow, idToHide1, idToHide2, seccionSi, seccionNo1, seccionNo2) {
@@ -95,3 +96,4 @@ document.querySelector('.go-top-container').addEventListener('click', function (
     });
 
 });
+

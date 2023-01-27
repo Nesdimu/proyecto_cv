@@ -23,11 +23,9 @@ h4 {
     color: #9f1dc0;
     padding-top: 10px;
     cursor: pointer;
+    cursor: pointer;
 }
 
-/* .seccion {
-    cursor: pointer;
-} */
 
 h4:hover {
     color: #c083cf;
