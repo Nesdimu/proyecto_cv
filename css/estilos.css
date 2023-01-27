@@ -182,7 +182,7 @@ a {
 
 #pic {
     float: right;
-    margin: -30px 0 0 0;
+    margin: -38px 0 0 0;
 }
 
 .info-personal {
@@ -198,14 +198,19 @@ a {
 }
 
 .fn {
-    margin: 0 0 20px 10px;
-    padding: 0 0 16px 0;
+    margin: 0 0 10px 10px;
+    padding: 0 0 0 0;
     font-size: 38px;
     font-weight: bold;
     letter-spacing: -2px;
+
+}
+.borde-debajo{
+    margin: 0 0 28px 10px;
+    padding: 0 0 14px 42px;
+ 
     border-bottom: 1px dotted #999;
 }
-
 ul {
     margin: 0 0 2px 17px;
     text-align: center;

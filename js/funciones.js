@@ -59,15 +59,17 @@ function activarIcono(iconoOn, iconosOff) {
 // oculta y muestra secciones - agrega clase a la seccion activa
 document.getElementById("slidefotos").addEventListener('click', function () {
     show('carouselfotos', 'carouselvideos', 'cv', 'slidefotos', 'slidevideos', 'curriculum');
+    document.getElementById('tituloPrincipal').style.display = 'block';
 });
 
 document.getElementById("slidevideos").addEventListener('click', function () {
     show('carouselvideos', 'carouselfotos', 'cv', 'slidevideos', 'slidefotos', 'curriculum');
+    document.getElementById('tituloPrincipal').style.display = 'block';
 });
 
 document.getElementById("curriculum").addEventListener('click', function () {
     show('cv', 'carouselvideos', 'carouselfotos', 'curriculum', 'slidefotos', 'slidevideos');
-    console.log("clic en cv");
+    document.getElementById('tituloPrincipal').style.display = 'none';
 });
 
 function show(idToShow, idToHide1, idToHide2, seccionSi, seccionNo1, seccionNo2) {
