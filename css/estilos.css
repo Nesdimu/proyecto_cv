@@ -88,15 +88,16 @@ a {
 }
 
 #cv {
-    padding-top: 5%;
+    padding-top: 30px;
+
 }
 
 #carouselfotos {
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 #carouselvideos {
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 /* esconder texto si la página en muy chica*/
