@@ -22,17 +22,16 @@ h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #9f1dc0;
     padding-top: 10px;
-
-}
-
-.seccion {
     cursor: pointer;
 }
+
+/* .seccion {
+    cursor: pointer;
+} */
 
 h4:hover {
     color: #c083cf;
     font-weight: bold;
- 
 }
 
 .seccion-activa {
@@ -85,11 +84,6 @@ a {
 }
 
 /* ATRIBUTOS POR ETIQUETA O ID*/
-/* para separar de los iconos de redes */
-#subtitulo {
-    margin-right: 1%;
-}
-
 #titulo {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -181,7 +175,7 @@ a {
 /*************************************************************/
 /* estilos CV */
 
-#objetivo p {
+#objetivo  {
     font-family: Georgia, Serif;
     font-style: italic;
     color: #666;
@@ -193,10 +187,22 @@ a {
     margin: -30px 0 0 0;
 }
 
+.info-personal {
+    padding: 0 5px 0 0;
+    margin: 0 0 10px 0;
+}
+
+.iconosInfo {
+    color: #454545;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .fn {
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 10px;
     padding: 0 0 16px 0;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: bold;
     letter-spacing: -2px;
     border-bottom: 1px dotted #999;
@@ -204,18 +210,52 @@ a {
 
 ul {
     margin: 0 0 2px 17px;
+    text-align: center;
 }
 
 dt {
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    text-align: right;
-    padding: 0 20px 11px 0;
+    text-align: center;
+    padding: 11px 20px 11px 0;
     border-right: 1px solid #999;
     border-bottom: 2px solid #999;
     margin-top: 5px;
     margin-bottom: 10px;
+
+}
+
+/* espacio entre fontawesome*/
+.fa-solid {
+    padding: 0 4px 0 4px;
+}
+
+/***efectos  en items del CV****/
+.icono-activo {
+    color: #0ba366;
+}
+#objetivos:hover {
+    color: #2cbc82;
+}
+#formacion:hover {
+    color: #2cbc82;
+}
+
+#experiencia:hover {
+    color: #2cbc82;
+}
+
+#exposiciones:hover {
+    color: #2cbc82;
+}
+
+#equipo:hover {
+    color: #2cbc82;
+}
+
+#herramientas:hover {
+    color: #2cbc82;
 }
 
 /*************************************************/
