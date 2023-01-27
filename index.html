@@ -57,11 +57,20 @@
     <div class="container" id="cv" style="display: none;">
         <img src="images/MS_CV.png" width="230" alt="Marcelo Santangelo" id="pic" />
 
-        <div id="contact-info" class="vcard">
+        <div id="contact-info" class="container">
             <h1 class="fn">Marcelo Santángelo</h1>
-            <p>
-                <i class="fa-brands fa-whatsapp fa-lg"></i> <span class="tel">+54-911-1111-2222</span><br />
-            </p>
+            <div class="row">
+                <div class="col-sm-1 text-end">
+                    <p class="subcolumna info-personal"><i class="fa-brands fa-whatsapp fa-lg"></i></p>
+                    <p class="subcolumna info-personal"><i class="fa-solid fa-location-dot fa-lg"></i></p>
+                    <p class="subcolumna info-personal"><i class="fa-solid fa-calendar-days fa-lg"></i></p>
+                </div>
+                <div class="col-sm-11 text-start info-personal">
+                    <p class="info-personal">+54-911-1111-2222</p>
+                    <p class="info-personal"> Av Corrientes 348, (1043) CABA, Argentina</p>
+                    <p class="info-personal">01/09/1970</p>
+                </div>
+            </div>
         </div>
 
         <div id="objetivo">
@@ -77,9 +86,9 @@
             <div class="clear"></div>
             <div class="row">
                 <div class="col-sm-3 text-end">
-                    <dt>Formación <i class="fa-solid fa-school"></i></dt>
+                    <dt id="formacion">Formación <i class="fa-solid fa-school"></i></dt>
                 </div>
-                <div class="col-sm-9 text-start">
+                <div id="formacionInfo" class="col-sm-9 text-start" style="display: none;">
                     <ul>
                         <li>Autodidacta en fotografía analógica y digital</li>
                         <li>Workshops de fotografía social en Escuela Motivarte</li>
@@ -91,9 +100,9 @@
             <div class="clear"></div>
             <div class="row">
                 <div class="col-sm-3 text-end">
-                    <dt>Experiencia <i class="fa-solid fa-camera-retro"></i></dt>
+                    <dt id="experiencia">Experiencia <i class="fa-solid fa-camera-retro"></i></dt>
                 </div>
-                <div class="col-sm-9 text-start">
+                <div id="experienciaInfo" class="col-sm-9 text-start" style="display: none;">
                     <ul>
                         <h6>2013-Actualidad - Como fotógrafo:</h6>
                         <li>De espectáculos y obras en vivo</li>
@@ -118,9 +127,9 @@
             <div class="clear"></div>
             <div class="row">
                 <div class="col-sm-3 text-end">
-                    <dt>Exposiciones <i class="fa-solid fa-building-columns"></i></dt>
+                    <dt id="exposiciones">Exposiciones <i class="fa-solid fa-building-columns"></i></dt>
                 </div>
-                <div class="col-sm-9 text-start">
+                <div id="exposicionesInfo" class="col-sm-9 text-start" style="display: none;">
                     <ul>
                         <h6>Noviembre 2016 - Centro cultural Carlos Gardel (CABA):</h6>
                         <li>Muestra de fotografías de espectáculos</li>
@@ -134,9 +143,9 @@
             <div class="clear"></div>
             <div class="row">
                 <div class="col-sm-3 text-end">
-                    <dt>Equipo <i class="fa-solid fa-gear"></i></dt>
+                    <dt id="equipo">Equipo <i class="fa-solid fa-gear"></i></dt>
                 </div>
-                <div class="col-sm-9 text-start">
+                <div id="equipoInfo" class="col-sm-9 text-start" style="display: none;">
                     <ul>
                         <li>Cámaras: Nikon Z6, Nikon D750</li>
                         <li> Objetivos Nikon: 50mm f1.4, 70-300mm f3.5-5.6, 24-120mm f4 </li>
@@ -150,9 +159,9 @@
             <div class="clear"></div>
             <div class="row">
                 <div class="col-sm-3 text-end">
-                    <dt>Herramientas Informáticas <i class="fa-solid fa-computer"></i></dt>
+                    <dt id="herramientas">Herramientas<i class="fa-solid fa-computer"></i></dt>
                 </div>
-                <div class="col-sm-9 text-start">
+                <div id="herramientasInfo" class="col-sm-9 text-start" style="display: none;">
                     <ul>
                         <li>Adobe Ligthroom, Adobe Photoshop, Adobe Premiere, Adobe After Effects. Adobe Audition.
                             Microsoft Office, Redes Sociales.</li>
@@ -285,9 +294,11 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <p class="h5">© 2023: Marcelo Santángelo</p>
-                <a href="https://www.instagram.com/marcelosantangelofoto/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i> </a>
+                <a href="https://www.instagram.com/marcelosantangelofoto/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-lg"></i> </a>
                 <a href="https://www.marcelosantangelo.com/" target="_blank"><i class="fa-solid fa-globe fa-lg"></i></a>
-                <a href="mailto:fotos@marcelosantangelo.com" target="_blank"><i class=" fa-solid fa-envelope fa-lg"></i></a>
+                <a href="mailto:fotos@marcelosantangelo.com" target="_blank"><i
+                        class="fa-solid fa-envelope fa-lg"></i></a>
 
             </div>
             <div class="d-none d-md-block col-md-3">
