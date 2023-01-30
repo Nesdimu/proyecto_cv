@@ -1,9 +1,14 @@
 /* fondo ruido al body */
 body {
     background: url("../images/noise.jpg");
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    /* display: flex;
+    min-height: 100vh;
+    flex-direction: column; */
 }
 
-/* estilos a clases */
 /* estilo de titulo principal superior */
 .card {
     background-color: #7dadff;
@@ -16,7 +21,7 @@ body {
     background-color: #aeccff;
 }
 
-/*texto links a cv imagenes y videos*/
+/*******texto links a cv imagenes y videos******/
 .seccion {
     font-family: 'Port Lligat Sans', sans-serif;
     color: #9f1dc0;
@@ -33,8 +38,7 @@ body {
 }
 
 .seccion:hover {
-    color: #c083cf;
-    letter-spacing: 1px;
+    color: #d292e2;
     font-weight: bold;
 }
 
@@ -42,6 +46,8 @@ body {
     color: #c083cf;
     font-weight: bold;
 }
+
+/**************************************************/
 
 /* estilo de hipervinculos*/
 a {
@@ -78,7 +84,11 @@ a {
 .piepagina {
     color: #fcfcfcfb;
     background-color: #64646468;
-    padding: 2%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: auto; */
 }
 
 /* separador de lineas*/
@@ -92,12 +102,13 @@ a {
     font-weight: normal;
     font-size: 40px;
     margin: 0 0 0 0;
+    padding-top: 3px;
 }
 
 #subtitulo {
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 20px;
-    margin: 0 0 5px 0;
+    margin: 0 0 3px 0;
 }
 
 .subcolumna {
@@ -113,13 +124,11 @@ a {
 }
 
 #carouselfotos {
-    margin-top: 30px;
-    min-height: 812px;
+    margin-top: 6px;
 }
 
 #carouselvideos {
-    margin-top: 30px;
-    min-height: 812px;
+    margin-top: 6px;
 }
 
 /* esconder texto si la página en muy chica*/
@@ -140,7 +149,7 @@ a {
 
 #pic {
     float: right;
-    margin: -38px 0 0 0;
+    margin: -23px 0 0 0;
 }
 
 .fn {
@@ -170,10 +179,11 @@ a {
         margin: 0 0 5px 5px;
         font-size: 35px;
     }
+
     #cv {
         padding-top: 20px;
         min-height: 1200px;
-      }
+    }
 
 }
 
@@ -209,7 +219,7 @@ ul {
     text-align: center;
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 18px;
-    padding: 0 0 5px 0;
+    padding: 0 0 0 0;
 }
 
 h6 {
