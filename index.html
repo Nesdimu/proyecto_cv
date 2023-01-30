@@ -11,7 +11,7 @@
     <!-- fonts google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Port+Lligat+Sans&display=swap"
         rel="stylesheet">
     <!--Bootstrap 5.3-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
     <div class="card" id="tituloPrincipal" style="display: block;">
         <div class="text-center">
             <h1 id="titulo">Marcelo Santángelo</h1>
-            <h6 id="subtitulo">Fotógrafo Independiente</h6>
+            <p id="subtitulo">Fotógrafo Independiente</p>
         </div>
     </div>
 
@@ -42,45 +42,39 @@
     <div class="container-fluid">
         <div class="row text-center selector">
             <div class="col-sm-4">
-                <h4 id="curriculum" class="seccion">Curriculum Vitae</h4>
+                <p id="curriculum" class="seccion">Curriculum Vitae</p>
                 <p class="subcolumna">Info en detalle</p>
             </div>
             <div class="col-sm-4">
-                <h4 id="slidefotos" class="seccion seccion-activa">Imágenes</h4>
+                <p id="slidefotos" class="seccion seccion-activa">Imágenes</p>
                 <p class="subcolumna">Conciertos / Sociales / Books</p>
             </div>
             <div class="col-sm-4">
-                <h4 id="slidevideos" class="seccion">Videos</h4>
+                <p id="slidevideos" class="seccion">Videos</p>
                 <p class="subcolumna">Demos en movimiento</p>
             </div>
         </div>
     </div>
     <!-- curriculum -->
-    <div class="container" id="cv" style="display: none; min-height: 950px; max-width: 1000px;" >
-        <img src="images/MS_CV.png" width="250" alt="Marcelo Santangelo" id="pic" />
+    <div class="container" id="cv" style="display: none;">
+        <div class="pic-container"><img src="images/MS_CV.png" width="250" alt="Marcelo Santangelo" id="pic" />
+        </div>
         <div id="contact-info" class="container">
-            <h1 class="fn">Marcelo Santángelo</h1>
-            <h6 class="borde-debajo">Fotógrafo Independiente</h6>
-            <div class="row">
-                <div class="col-sm-1 text-end">
-                    <p class="subcolumna info-personal"><i class="fa-brands fa-whatsapp fa-lg"></i></p>
-                    <p class="subcolumna info-personal"><i class="fa-solid fa-location-dot fa-lg"></i></p>
-                    <p class="subcolumna info-personal"><i class="fa-solid fa-calendar-days fa-lg"></i></p>
-                </div>
-                <div class="col-sm-11 text-start info-personal">
-                    <li class="info-personal">+54-911-1111-2222</li>
-                    <li class="info-personal"> Av Corrientes 348, (1043) CABA, Argentina</li>
-                    <li class="info-personal">01/09/1970</li>
-                </div>
+            <h2 class="fn">Marcelo Santángelo</h2>
+            <h5 class="borde-debajo">Fotógrafo Independiente</h5>
+            <div>
+                <li class="info-personal">Cel: +54-911-1111-2222 &nbsp;<i class="fa-brands fa-whatsapp fa-lg"></i></li>
+                <li class="info-personal">Dirección: Av Corrientes 348, (1043) CABA, Argentina&nbsp;<i class="fa-solid fa-location-dot fa-lg"></i></li>
+                <li class="info-personal">Fecha Nacimiento: 01/09/1970&nbsp;<i class="fa-solid fa-calendar-days fa-lg"></i></li>
             </div>
             <h1 class="borde-debajo"></h1>
         </div>
         <div class="clear"></div>
-
+        <!---------------------------------iconos seleccion de info------------------------------------>
         <div class="container-fluid">
             <div class="text-center">
                 <i class="iconosInfo fa-solid fa-bullseye fa-xl icono-activo" id="objetivos"></i>
-                <i class="iconosInfo fa-solid fa-school fa 2xl" id="formacion"></i>
+                <i class="iconosInfo fa-solid fa-graduation-cap fa-xl" id="formacion"></i>
                 <i class="iconosInfo fa-solid fa-camera-retro fa-xl" id="experiencia"></i>
                 <i class="iconosInfo fa-solid fa-building-columns fa-xl" id="exposiciones"></i>
                 <i class="iconosInfo fa-solid fa-gear fa-xl" id="equipo"></i>
@@ -89,97 +83,96 @@
         </div>
         <div class="clear"></div>
 
-        <!----------------------------------------------------------------------------------------------------->
+        <!------------------------------------------Objetivo---------------------------------------------->
         <div class="container">
-            <div id="objetivosInfo" class="row">
+            <div id="objetivosInfo">
                 <dt>Objetivo</dt>
                 <div class="clear"></div>
                 <div id="objetivo"> <!--id para el formato de texto-->
-                    <p>
-                        Apasionado por la música y la fotografía encontré la manera de unir ambas artes fotografiando
+                    <p> Apasionado por la música y la fotografía encontré la manera de unir ambas artes fotografiando
                         bandas, intérpretes y orquestas. Fue un punto de partida para ingresar en el mundo de la imagen
                         y relacionarme con su lenguaje, expresando, desde mi visión, las experiencias del entorno.
                     </p>
                 </div>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------Formación------------------------------------------------>
         <div class="container">
-            <div id="formacionInfo" class="row" style="display: none;">
+            <div id="formacionInfo" style="display: none;">
                 <dt>Formación</dt>
                 <div class="clear"></div>
                 <ul>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Autodidacta en fotografía analógica y digital</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Workshops de fotografía social en Escuela Motivarte</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Workshops de herramientas de retoque digital</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Autodidacta en fotografía analógica y digital</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Workshops de fotografía social en Escuela Motivarte</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Workshops de herramientas de retoque digital</p>
                 </ul>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
+        <!----------------------------------------Experiencia-------------------------------------------->
         <div class="container">
-            <div id="experienciaInfo" class="row" style="display: none;">
+            <div id="experienciaInfo" style="display: none;">
                 <dt>Experiencia</dt>
                 <div class="clear"></div>
                 <ul>
                     <h6>2013-Actualidad - Como fotógrafo:</h6>
-                    <p><i class="fa-solid fa-play fa-xs"></i>De espectáculos y obras en vivo</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Arte de tapas de CD y Libros</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Social, casamientos y eventos empresariales</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>De estudio, retratos individuales y grupales</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;De espectáculos y obras en vivo</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Arte de tapas de CD y Libros</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Social, casamientos y eventos empresariales</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;De estudio, retratos individuales y grupales</p>
 
                     <div class="clear"></div>
                     <h6>2017-Actualidad - Como videógrafo:</h6>
-                    <p><i class="fa-solid fa-play fa-xs"></i>De espectáculos y obras en vivo</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Social, casamientos y eventos empresariales</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>De material promocional y para capacitaciones</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;De espectáculos y obras en vivo</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Social, casamientos y eventos empresariales</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;De material promocional y para capacitaciones</p>
 
                     <div class="clear"></div>
                     <h6>2016-Actualidad - Como docente:</h6>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Clases particulares y en estudio</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Clases en Escuela Motivarte: “Workshop de fotografía de
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Clases particulares y en estudio</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Clases en Escuela Motivarte: “Workshop de fotografía de
                         espectáculos”</p>
                 </ul>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
+        <!-------------------------------------Exposiciones--------------------------------------------->
         <div class="container">
-            <div id="exposicionesInfo" class="row" style="display: none;">
+            <div id="exposicionesInfo" style="display: none;">
                 <dt>Exposiciones</dt>
                 <div class="clear"></div>
                 <ul>
                     <h6>Noviembre 2016 - Centro cultural Carlos Gardel (CABA):</h6>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Muestra de fotografías de espectáculos</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Muestra de fotografías de espectáculos</p>
 
                     <div class="clear"></div>
                     <h6>Diciembre 2014 y Septiembre 2015 - Congreso de la Nación Argentina:</h6>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Muestra de fotografías del edificio del Congreso</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Muestra de fotografías del edificio del Congreso</p>
                 </ul>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
+        <!---------------------------------------Equipo-------------------------------------------->
         <div class="container">
-            <div id="equipoInfo" class="row" style="display: none;">
+            <div id="equipoInfo" style="display: none;">
                 <dt>Equipo</dt>
                 <div class="clear"></div>
                 <ul>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Cámaras: Nikon Z6, Nikon D750</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Objetivos Nikon: 50mm f1.4, 70-300mm f3.5-5.6, 24-120mm f4
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Cámaras: Nikon Z6, Nikon D750</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Objetivos Nikon: 50mm f1.4, 70-300mm f3.5-5.6, 24-120mm f4
                     </p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Objetivos Sigma: 24-70mm f2.8, 70-200 f2.8</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Objetivos Viltrox: 24mm f1.8, 35mm f1.8, 85mm f1.8</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i> Objetivo Tamron 15-30mm 2.8</p>
-                    <p><i class="fa-solid fa-play fa-xs"></i> Objetivo Rokinon 12mm Eyefish</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Objetivos Sigma: 24-70mm f2.8, 70-200 f2.8</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Objetivos Viltrox: 24mm f1.8, 35mm f1.8, 85mm f1.8</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Objetivo Tamron 15-30mm 2.8</p>
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Objetivo Rokinon 12mm Eyefish</p>
                 </ul>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
+        <!------------------------------------herramientas------------------------------------------------>
         <div class="container">
-            <div id="herramientasInfo" class="row" style="display: none;">
+            <div id="herramientasInfo" style="display: none;">
                 <dt>Herramientas</dt>
                 <div class="clear"></div>
 
                 <ul>
-                    <p><i class="fa-solid fa-play fa-xs"></i>Adobe Ligthroom, Adobe Photoshop, Adobe Premiere, Adobe
+                    <p><i class="fa-solid fa-play fa-xs"></i>&nbsp;Adobe Ligthroom, Adobe Photoshop, Adobe Premiere, Adobe
                         After Effects. Adobe Audition.
                         Microsoft Office, Redes Sociales.</p>
 
@@ -190,7 +183,7 @@
     <div class="clear"></div>
     </div>
     <!-- fotos -->
-    <div id="carouselfotos" class="carousel slide" data-bs-ride="carousel" style="display: block;  min-height: 812px;">
+    <div id="carouselfotos" class="carousel slide" data-bs-ride="carousel" style="display: block;">
         <div class="carousel-inner">
             <div class="carousel-item c-item active" data-bs-interval="2500">
                 <img src="images/carousel-6.jpg" class="d-block w-100 c-img">
@@ -267,7 +260,7 @@
 
     </div>
     <!-- videos -->
-    <div id="carouselvideos" class="carousel" data-bs-interval="false" style="display: none;  min-height: 812px;">
+    <div id="carouselvideos" class="carousel" data-bs-interval="false" style="display: none;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -310,9 +303,11 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <p class="h5">© 2023: Marcelo Santángelo</p>
-                <a href="https://www.instagram.com/marcelosantangelofoto/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://www.instagram.com/marcelosantangelofoto/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-lg"></i></a>
                 <a href="https://www.marcelosantangelo.com/" target="_blank"><i class="fa-solid fa-globe fa-lg"></i></a>
-                <a href="mailto:fotos@marcelosantangelo.com" target="_blank"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                <a href="mailto:fotos@marcelosantangelo.com" target="_blank"><i
+                        class="fa-solid fa-envelope fa-lg"></i></a>
 
 
             </div>

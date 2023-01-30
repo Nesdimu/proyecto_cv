@@ -1,4 +1,3 @@
-
 //elementos del cv
 document.getElementById('objetivos').addEventListener('mouseenter', function () {
     showCV('objetivosInfo', ['formacionInfo', 'experienciaInfo', 'exposicionesInfo', 'equipoInfo', 'herramientasInfo']);
@@ -35,24 +34,20 @@ document.getElementById('herramientas').addEventListener('mouseenter', function 
 
 
 function showCV(idToShowInfo, idsToHideInfo) {
-    x = 0;
-    for (x; x <= 4; x++) {
-        document.getElementById((idsToHideInfo)[x]).style.display = 'none';
+    let x = 0;
+    for (x; x < idsToHideInfo.length; x++) {
+        document.getElementById(idsToHideInfo[x]).style.display = 'none';
     }
     document.getElementById(idToShowInfo).style.display = 'block';
-
 };
 
 function activarIcono(iconoOn, iconosOff) {
-    x = 0;
-    for (x; x <= 4; x++) {
-        document.getElementById((iconosOff)[x]).classList.remove('icono-activo');
+    let x = 0;
+    for (x; x < iconosOff.length; x++) {
+        document.getElementById(iconosOff[x]).classList.remove('icono-activo');
     }
-    console.log("clic en icono antes");
     document.getElementById(iconoOn).classList.add('icono-activo');
-    console.log("clic en icono despues");
 };
-
 //************************************************************************************** */
 
 
@@ -70,13 +65,14 @@ document.getElementById("slidevideos").addEventListener('click', function () {
 document.getElementById("curriculum").addEventListener('click', function () {
     show('cv', 'carouselvideos', 'carouselfotos', 'curriculum', 'slidefotos', 'slidevideos');
     document.getElementById('tituloPrincipal').style.display = 'none';
+    document.getElementById('cv').scrollIntoView();
+
 });
 
 function show(idToShow, idToHide1, idToHide2, seccionSi, seccionNo1, seccionNo2) {
     document.getElementById(idToShow).style.display = 'block';
     document.getElementById(idToHide1).style.display = 'none';
     document.getElementById(idToHide2).style.display = 'none';
-    // document.getElementById(idToShow).scrollIntoView();
     document.getElementById(seccionSi).classList.add('seccion-activa');
     document.getElementById(seccionNo1).classList.remove('seccion-activa');
     document.getElementById(seccionNo2).classList.remove('seccion-activa');
