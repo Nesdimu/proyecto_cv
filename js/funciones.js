@@ -1,4 +1,5 @@
-//elementos del cv
+//elementos del cv: muestra y oculta - activa icono
+
 document.getElementById('objetivos').addEventListener('mouseenter', function () {
     showCV('objetivosInfo', ['formacionInfo', 'experienciaInfo', 'exposicionesInfo', 'equipoInfo', 'herramientasInfo']);
     activarIcono('objetivos', ['formacion', 'experiencia', 'exposiciones', 'equipo', 'herramientas']);
@@ -31,8 +32,6 @@ document.getElementById('herramientas').addEventListener('mouseenter', function 
     activarIcono('herramientas', ['objetivos', 'experiencia', 'exposiciones', 'equipo', 'formacion']);
 });
 
-
-
 function showCV(idToShowInfo, idsToHideInfo) {
     let x = 0;
     for (x; x < idsToHideInfo.length; x++) {
@@ -53,30 +52,36 @@ function activarIcono(iconoOn, iconosOff) {
 
 // oculta y muestra secciones - agrega clase a la seccion activa
 document.getElementById("slidefotos").addEventListener('click', function () {
-    show('carouselfotos', 'carouselvideos', 'cv', 'slidefotos', 'slidevideos', 'curriculum');
+    show('carouselfotos', 'carouselvideos', 'cv');
+    activarSeccion('slidefotos', 'slidevideos', 'curriculum');
     document.getElementById('tituloPrincipal').style.display = 'block';
 });
 
 document.getElementById("slidevideos").addEventListener('click', function () {
-    show('carouselvideos', 'carouselfotos', 'cv', 'slidevideos', 'slidefotos', 'curriculum');
+    show('carouselvideos', 'carouselfotos', 'cv');
+    activarSeccion('slidevideos', 'slidefotos', 'curriculum');
     document.getElementById('tituloPrincipal').style.display = 'block';
 });
 
 document.getElementById("curriculum").addEventListener('click', function () {
-    show('cv', 'carouselvideos', 'carouselfotos', 'curriculum', 'slidefotos', 'slidevideos');
+    show('cv', 'carouselfotos', 'carouselvideos');
+    activarSeccion('curriculum', 'slidefotos', 'slidevideos');
     document.getElementById('tituloPrincipal').style.display = 'none';
     document.getElementById('cv').scrollIntoView();
-
 });
 
-function show(idToShow, idToHide1, idToHide2, seccionSi, seccionNo1, seccionNo2) {
+function show(idToShow, idToHide1, idToHide2) {
     document.getElementById(idToShow).style.display = 'block';
     document.getElementById(idToHide1).style.display = 'none';
     document.getElementById(idToHide2).style.display = 'none';
+};
+
+function activarSeccion(seccionSi, seccionNo1, seccionNo2) {
     document.getElementById(seccionSi).classList.add('seccion-activa');
     document.getElementById(seccionNo1).classList.remove('seccion-activa');
     document.getElementById(seccionNo2).classList.remove('seccion-activa');
 };
+
 //************************************************************************************** */
 
 // boton go-top

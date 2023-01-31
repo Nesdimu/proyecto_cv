@@ -33,7 +33,7 @@ body {
 
 @media screen and (max-width: 576px) {
     .seccion {
-        padding: 0 0 0 0;
+        padding: 0;
     }
 }
 
@@ -46,7 +46,6 @@ body {
     color: #c083cf;
     font-weight: bold;
 }
-
 /**************************************************/
 
 /* estilo de hipervinculos*/
@@ -88,7 +87,6 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* margin-top: auto; */
 }
 
 /* separador de lineas*/
@@ -101,7 +99,7 @@ a {
     font-family: 'Berkshire Swash', cursive;
     font-weight: normal;
     font-size: 40px;
-    margin: 0 0 0 0;
+    margin: 0;
     padding-top: 3px;
 }
 
@@ -138,13 +136,14 @@ a {
     }
 }
 
-/* estilos CV */
+/************* estilos CV *********************/
 
 #objetivo {
     font-family: Georgia, Serif;
     font-style: italic;
     color: #666;
     margin: 0 0 16px 0;
+    text-align: center;
 }
 
 #pic {
@@ -187,18 +186,17 @@ a {
 
 }
 
-.iconosInfo {
+.iconos-info {
     color: #454545;
     cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-    .iconosInfo {
+    .iconos-info {
         margin-left: 15px;
         margin-right: 15px;
     }
 }
-
 
 .info-personal {
     padding: 0 5px 0 0;
@@ -206,8 +204,6 @@ a {
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 17px;
 }
-
-
 
 .borde-debajo {
     margin: 0 0 20px 10px;
@@ -240,13 +236,14 @@ dt {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+/*****************************************************************/
 
 /* espacio entre fontawesome*/
 .fa-solid {
     padding: 0 4px 0 4px;
 }
 
-/***efectos  en items del CV****/
+/***efectos en items del CV****/
 .icono-activo {
     color: #0ba366;
 }
