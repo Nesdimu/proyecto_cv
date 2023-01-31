@@ -1,12 +1,9 @@
-/* fondo ruido al body */
+/* fondo ruido al body y formato para el pie de página */
 body {
     background: url("../images/noise.jpg");
     position: relative;
     padding-bottom: 100px;
     min-height: 100vh;
-    /* display: flex;
-    min-height: 100vh;
-    flex-direction: column; */
 }
 
 /* estilo de titulo principal superior */
@@ -112,7 +109,7 @@ a {
 .subcolumna {
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 18px;
-    margin: 0 0 5px 0;
+    margin: 0;
 }
 
 #cv {
@@ -157,7 +154,6 @@ a {
     font-size: 38px;
     font-weight: bold;
     letter-spacing: -2px;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -183,7 +179,6 @@ a {
         padding-top: 20px;
         min-height: 1200px;
     }
-
 }
 
 .iconos-info {
